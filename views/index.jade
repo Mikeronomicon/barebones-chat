@@ -1,5 +1,18 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Bastard Chat
+  div#receiveSpace
+    form#receiving
+      output#messageWindow(type="text" placeholder="You must be a bastard if you have no messages.")
+  div#messageSpace
+  div#name-prompt
+    form
+      input#name(type="text" placeholder="Enter a name, Bastard")
+      input(type="submit" value="Your name here, bastard")
+  div#typingSpace(style="display: none")
+    form#typing
+      input#message(type="text" placeholder="Be a Bastard" name="message")
+      input(type="submit" value="Send!")
+
+ 
