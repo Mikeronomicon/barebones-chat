@@ -13,6 +13,7 @@ $(function() {
     //message.text(user + 'says' + message);
     $('#messageSpace').append(messagePane);
     $('#receiving').append(receiveSpace);
+    $('#messageWindow').append(receiveSpace);
   });
 
   $('#name-prompt form').submit(function() {
